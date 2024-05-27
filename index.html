@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVerse | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="page1">
+            <img style="height: 100%; width: 100%" src="1.png" alt="" />
+
+            <nav id="nav">
+                <a href="index.html"><button class="btn">HOME</button></a>
+                <a href="login.html"><button class="btn">LOGIN</button></a>
+                <a href="sign-up.html"><button class="btn">SIGN UP</button></a>
+                <a href="leaderboard.html"><button class="btn">GAMES LEADERBOARD</button></a>
+                <a href="upcoming-games.html"><button class="btn">UPCOMING GAMES</button></a>
+            </nav>
+            <div class="main-heading">
+                <h1 id="main-heading" style="font-size: 3vw;margin-top: 40px;display: flex;">
+                    <p style="color: purple;">Game</p>
+                    <p style="color: rgb(255, 255, 148);">Verse</p>
+                </h1>
+            </div>
+            <div class="main-heading">
+                <h1 id="main-sub-heading" style="font-size: 1vw;margin-top: 98px; color:darkblue;">Most Safest and
+                    Secure Website to Download Games</h1>
+            </div>
+
+            <div id="input-box">
+                <input type='text' name='Search' id='search' />
+                <input id="submit-button" type='submit' name='submit' value='Search' />
+            </div>
+
+            <div id="box-container">
+                <h2 id="box-heading" style="margin-top: 50px;color: darkred;">Top 3 Games Rated Most On GameVerse</h2>
+            </div>
+            <div id="rectangle">
+
+            </div>
+
+            <div id="box-container" dis>
+                <a href="https://www.battlegroundsmobileindia.com/" style="text-decoration: none;" target="_blank">
+                    <div id="box1">
+                        <img src="2.jpg" alt="">
+                        <i class="fa fa-heart"
+                            style="font-size: 20px;color: red;position: absolute;margin-right: 30.5px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 22.5px;color: red;margin-bottom: 2px;">2.4M</p>
+                        <i class="fa fa-download"
+                            style="font-size: 20px;color: lightskyblue;position: absolute;margin-right: 149px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 140px;color: lightskyblue;margin-bottom: 2px;">120M
+                        </p>
+                    </div>
+                </a>
+                <a href="https://www.callofduty.com/modernwarfare" style="text-decoration: none;" target="_blank">
+                    <div id="box2">
+                        <img src="3.jpg" alt="">
+                        <i class="fa fa-heart"
+                            style="font-size: 20px;color: red;position: absolute;margin-right: 30.5px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 22.5px;color: red;margin-bottom: 2px;">2.8M</p>
+                        <i class="fa fa-download"
+                            style="font-size: 20px;color: lightskyblue;position: absolute;margin-right: 149px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 143px;color: lightskyblue;margin-bottom: 2px;">40M
+                        </p>
+                    </div>
+                </a>
+                <a href="https://playvalorant.com/en-us/?gad_source=1&gclid=CjwKCAiA9ourBhAVEiwA3L5RFlwfr0AfFwSvUs_3GaidOOs7H398kvLGlHUHufJyjJbXVopu4c4YuBoCrugQAvD_BwE&gclsrc=aw.ds"
+                    style="text-decoration: none;" target="_blank">
+                    <div id="box3">
+                        <img src="4.jpg" alt="">
+                        <i class="fa fa-heart"
+                            style="font-size: 20px;color: red;position: absolute;margin-right: 30.5px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 22.5px;color: red;margin-bottom: 2px;">2.1M</p>
+                        <i class="fa fa-download"
+                            style="font-size: 20px;color: lightskyblue;position: absolute;margin-right: 149px;margin-bottom: 20px;"></i>
+                        <p style="position: absolute;margin-right: 138.5px;color: lightskyblue;margin-bottom: 2px;">240M
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="main.js"></script>
+    <script>
+        const defaultTextValue = 'Search Here';
+
+        let searchBox = document.getElementById('search');
+
+
+        searchBox.value = defaultTextValue;
+
+
+        searchBox.onfocus = function () {
+            if (this.value == defaultTextValue) {
+                this.value = '';
+            }
+        }
+
+        searchBox.onblur = function () {
+            if (this.value == '') {
+                this.value = defaultTextValue;
+            }
+        } 
+    </script>
+</body>
+
+</html>

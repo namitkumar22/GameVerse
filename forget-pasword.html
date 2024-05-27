@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles-forget-password.css">
+    <title>GameVerse | Account Recovery</title>
+</head>
+
+<body>
+    <div class="card">
+        <p class="lock-icon"><i class="fa fa-lock" style="font-size:36px"></i></p>
+        <h2>Forgot Password?</h2>
+        <p>You can reset your Password here</p>
+        <input type="text" id="passInput" placeholder="Email address">
+        <button style="cursor: pointer;" onclick="done()">Send My Password</button>
+        <a href="login.html"><button style="width: 150px;cursor: pointer;">Back To Login</button></a>
+    </div>
+    <script>
+        function done(){
+            let input = document.getElementById('passInput')
+            console.log(input.value);
+            if (input.value.length == 0) {
+                alert("Please Enter Your E-Mail")
+            }
+            else{
+                alert("Succesfully sent a link to reset your password on your registered E-Mail")
+            }
+        }
+    </script>
+</body>
+
+</html>
